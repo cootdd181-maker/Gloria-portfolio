@@ -70,7 +70,7 @@ export default function Projects() {
                 {isHighlight && (
                   <div className="rounded-lg bg-amber-50 p-3">
                     <img
-                      src="/project-chowtaifook.jpg"
+                      src={`${import.meta.env.BASE_URL}project-chowtaifook.jpg`}
                       alt="Project"
                       className="h-20 w-28 rounded-lg object-cover"
                       onError={(e) => {

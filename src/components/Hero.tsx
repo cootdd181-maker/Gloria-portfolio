@@ -56,7 +56,7 @@ export default function Hero() {
               <ArrowDown className="h-4 w-4" />
             </button>
             <a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               download
               className="inline-flex items-center gap-2 rounded-full border-2 border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-700 transition-all hover:border-slate-400 hover:bg-slate-50"
             >
@@ -75,7 +75,7 @@ export default function Hero() {
           <div className="group relative mx-auto w-56 overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl lg:w-full">
             <div className="aspect-[3/4] w-full bg-slate-100">
               <img
-                src="/profile.jpg"
+                src={`${import.meta.env.BASE_URL}profile.jpg`}
                 alt="Gloria Wang"
                 className="h-full w-full object-cover"
                 onError={(e) => {
